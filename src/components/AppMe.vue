@@ -47,7 +47,6 @@
         <a href="https://github.com/locemarn" target="_blank" id="icon" ><v-icon dark>fab fa-github</v-icon></a>
         <a href="https://www.linkedin.com/in/marcelo-nogueira-408920109/" target="_blank" id="icon"><v-icon dark>fab fa-linkedin-in</v-icon></a>
         <a href="https://drive.google.com/open?id=1O_zG12-y2UPFIAAEuHynFd2Y5Zi7xYW2" target="_blank" id="icon"><v-icon dark>far fa-file-pdf</v-icon></a>
-        <a href="https://locemarn.github.io/marceloNogueira/" target="_blank" id="icon" >m<v-icon dark>fa-laptop</v-icon></a>
       </v-spacer>
     </v-footer>
   </v-jumbotron>
