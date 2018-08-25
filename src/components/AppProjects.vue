@@ -1,23 +1,27 @@
 <template>
-<v-jumbotron :gradient="gradient" height="100%" style="margin-top: 1px;">
-  <v-container align-content-center wrap>
-    <v-layout wrap>
-      <v-flex v-for="(item,index) in items" :key="index" sm5 offset-sm1>
-        <v-card hover raised id="card" color="teal lighten-5" >
-          <v-card-media>
-            <img v-img:mygroup :src="item.src" v-img="{ title: item.title, description: item.description }" style="height: 200px; width: 100%">
-          </v-card-media>
-          <v-card-title>
-            <div>
-              <span class="grey--text" v-text="item.title"></span><br>
-              <span v-text="item.description"></span>
-            </div>
-          </v-card-title>
-        </v-card>
-      </v-flex>
-    </v-layout>
-  </v-container>
-</v-jumbotron>
+  <v-jumbotron :gradient="gradient" height="100%" style="margin-top: 1px;">
+    <v-container align-content-center wrap>
+      <v-layout wrap>
+        <v-flex v-for="(item,index) in items" :key="index" sm5 offset-sm1>
+          <v-card hover raised id="card" color="teal lighten-5" >
+            <v-card-media>
+              <img v-img:mygroup
+                :src="item.src"
+                v-img="{ title: item.title, description: item.description }"
+                style="height: 200px; width: 100%"
+              >
+            </v-card-media>
+            <v-card-title>
+              <div>
+                <span class="grey--text" v-text="item.title"></span><br>
+                <span v-text="item.description"></span>
+              </div>
+            </v-card-title>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-jumbotron>
 </template>
 
 <script>
@@ -44,6 +48,16 @@ export default {
         title: 'E-commerce Admin area',
         description: 'Admin of e-commerce, also done with AdminLTE.',
         src: require('../assets/5.png')
+      },
+      {
+        title: 'Web-Tap-Top',
+        description: 'ABCR Web App for the control of concessionaires and carriers on the highways of the state of São Paulo.',
+        src: require('../assets/6.png')
+      },
+      {
+        title: 'Blog',
+        description: 'Personal blog for technical topics about programming and some philosophies of life.',
+        src: require('../assets/7.png')
       }
     ],
     dialog: false
@@ -55,6 +69,7 @@ export default {
 #card {
   margin: 5% auto;
   padding: 1%;
+  width: 60%;
 }
 </style>
 

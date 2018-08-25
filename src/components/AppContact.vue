@@ -1,5 +1,5 @@
 <template>
-  <v-card xs10 offset-xs1 sm8 offset-sm2 md6 offset-md3 id="form">
+  <v-card xs10 offset-xs1 sm8 offset-sm2 md6 offset-md3 id="form" >
     <v-snackbar
       v-model="snackbar"
       absolute
@@ -118,7 +118,11 @@ export default {
 </script>
 
 <style>
-/* #form {
-  margin-top: 5%;
-} */
+#form {
+  margin-top: 10%;
+}
+
+#btn-contact {
+  height: 300px;
+}
 </style>
